@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Cassave Cafe",
+    "address": "1211 N LaSalle Street, Chicago IL, 60610",
+    "phone": "(312) 487-2888",
+    "hours": {
+      "mon": "7:30-12",
+      "tue": "7:30-12",
+      "wed": "7:30-12",
+      "thu": "7:30-12",
+      "fri": "7:30-1",
+      "sat": "8:30-1",
+      "sun": "8:30-12"
+    },
+    "outlet": "Good"
+  },
+  {
+  "name": "Starbucks",
+  "address": "210 W North Avenue, Chicago IL, 60610",
+  "phone": "(312) 867-0186",
+  "hours": {
+    "mon": "all day",
+    "tue": "all day",
+    "wed": "all day",
+    "thu": "all day",
+    "fri": "all day",
+    "sat": "all day",
+    "sun": "all day"
+  },
+  "outlet": "Good"
+  },
+  {
+  "name": "Starbucks",
+  "address": "251 E Huron Street, Chicago IL, 60611",
+  "phone": "(312) 274-1472",
+  "hours": null,
+  "outlet": null
+  },
+  {
+  "name": "Dunkin Donuts",
+  "address": "39 W Jackson Boulevard, Chicago IL, 60604",
+  "phone": "(312) 939-3133",
+  "hours": null,
+  "outlet": null
+  },
+  {
+  "name": "Dunkin Donuts",
+  "address": "5615 S Harlem Avenue, Chicago IL, 60638",
+  "phone": "(773) 586-6460",
+  "hours": {
+    "mon": "all day",
+    "tue": "all day",
+    "wed": "all day",
+    "thu": "all day",
+    "fri": "all day",
+    "sat": "all day",
+    "sun": "all day"
+  },
+  "outlet": null
+  }
+]
