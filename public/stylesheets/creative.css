@@ -26,9 +26,9 @@ hr.light {
 
 a {
     color: #58B6E6;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 a:hover,
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 p {
@@ -61,11 +61,11 @@ p {
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -77,17 +77,17 @@ aside {
 }
 
 .navbar-default {
-    border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    border-color: rgba(34, 34, 34, 0.05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     color: #58B6E6;
 }
@@ -97,38 +97,38 @@ aside {
     color: #eb3812;
 }
 
-.navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     color: #222;
 }
 
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
     color: #58B6E6;
 }
 
-.navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
-    color: #58B6E6!important;
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+    color: #58B6E6 !important;
     background-color: transparent;
 }
 
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
     background-color: transparent;
 }
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
+        border-color: rgba(255, 255, 255, 0.3);
         background-color: transparent;
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(0, 0, 0, 0.7);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -136,18 +136,18 @@ aside {
         color: #fff;
     }
 
-    .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+    .navbar-default .nav > li > a,
+    .navbar-default .nav > li > a:focus {
+        color: rgba(0, 0, 0, 1);
     }
 
-    .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
+    .navbar-default .nav > li > a:hover,
+    .navbar-default .nav > li > a:focus:hover {
         color: #fff;
     }
 
     .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
+        border-color: rgba(34, 34, 34, 0.05);
         background-color: #fff;
         border-top: 2px solid #58B6E6;
     }
@@ -162,24 +162,28 @@ aside {
         color: #eb3812;
     }
 
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
+    .navbar-default.affix .nav > li > a,
+    .navbar-default.affix .nav > li > a:focus {
         color: #222;
     }
 
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
+    .navbar-default.affix .nav > li > a:hover,
+    .navbar-default.affix .nav > li > a:focus:hover {
         color: #58B6E6;
     }
 }
 
-header {
+.main-wrapper {
+    height: 100%;
+}
+
+.main-wrapper header {
     position: relative;
     width: 100%;
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../images/chicago2.jpg);
+    background-image: url('../images/chicago2-opt.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -187,44 +191,45 @@ header {
     -o-background-size: cover;
 }
 
-header .header-content {
+.main-wrapper header .header-content {
     position: relative;
     width: 100%;
     padding: 100px 15px;
     text-align: center;
 }
 
-header .header-content-inner {
-    background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%;
-    box-shadow: 0px 0px 50px 50px rgba(0, 0, 0, 0.6);
+.main-wrapper header .header-content-inner {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     padding-bottom: 1rem;
 }
 
-header .header-content .header-content-inner h1 {
+.main-wrapper header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-header .header-content .header-content-inner hr {
+.main-wrapper header .header-content .header-content-inner hr {
     margin: 30px auto;
 }
 
-header .header-content .header-content-inner p {
+.main-wrapper header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media(min-width:768px) {
-    header {
+    .main-wrapper header {
         min-height: 100%;
+        position: relative;
     }
 
-    header .header-content {
+    .main-wrapper header .header-content {
         position: absolute;
         top: 50%;
         padding: 0 50px;
@@ -233,13 +238,13 @@ header .header-content .header-content-inner p {
         transform: translateY(-50%);
     }
 
-    header .header-content .header-content-inner {
+    .main-wrapper header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
     }
 
-    header .header-content .header-content-inner p {
+    .main-wrapper header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
@@ -283,9 +288,9 @@ header .header-content .header-content-inner p {
     border-color: #fff;
     color: #222;
     background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 .btn-default:hover,
@@ -336,9 +341,9 @@ fieldset[disabled] .btn-default.active {
     border-color: #58B6E6;
     color: #fff;
     background-color: #58B6E6;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 .btn-primary:hover,
@@ -389,7 +394,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -421,4 +426,21 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+    position: relative;
+}
+
+#about, #contact, .main-wrapper > header {
+    float:left;
+    width: 100%;
+}
+
+.main-footer {
+    padding-top: 10px;
+    background-color: white;
+}
+
+@media only screen and (min-width: 1920px) {
+    .main-wrapper header {
+        background-image: url('../images/chicago2-opt-bigger.jpg');
+    }
 }
