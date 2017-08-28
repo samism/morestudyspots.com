@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="stylesheets/spots.css">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 matches-container">
+            <input type="text" class="addr-input"
+                   placeholder="Ex: 3300 S Federal St 60616"
+                   autocomplete="off"
+                   ng-model="addrQuery">
+            <i title="Found somewhere new? Click to add"
+               class="fa fa-search fa-2x search-spot"
+               unselectable="on"></i>
+            <section class="match-list">
+                <figure class="match clearfix"
+                        unselectable="on"
+                        ng-repeat="spot in spots | orderObjectBy: 'distanceFromUser'">
+                    <div class="spot-name">
+                        <h3 class="text-center">{{ spot.name }}</h3>
+                    </div>
+                    <div class="or-spacer-vertical left">
+                        <div class="mask"></div>
+                    </div>
+                    <div class="info-preview">
+                        <h6 class="distance">0.6mi</h6>
+                        <ul class="category-list list-unstyled">
+                            <li title="Wi-Fi Reliability and Speed"><i
+                                    class="fa fa-wifi category-range"></i></li>
+                            <li title="Outlet Availability"><i class="fa fa-plug category-range"></i>
+                            </li>
+                            <li title="Noise Levels"><i class="fa fa-bullhorn category-range"></i></li>
+                            <li title="Parking Availability"><i class="fa fa-car category-range"></i>
+                            </li>
+                        </ul>
+                        <ul class="category-list-levels list-unstyled">
+                            <li><i ng-class="{ good : spot.quality_levels.wifi == 3,
+                                               decent : spot.quality_levels.wifi == 2,
+                                               bad : spot.quality_levels.wifi == 1}"
+                                   ng-repeat="n in [] | range:spot.quality_levels.wifi"
+                                   class="fa fa-bars fa-rotate-90"></i></li>
+                            <li><i ng-class="{ good : spot.quality_levels.outlets == 3,
+                                               decent : spot.quality_levels.outlets == 2,
+                                               bad : spot.quality_levels.outlets == 1}"
+                                   ng-repeat="n in [] | range:spot.quality_levels.outlets"
+                                   class="fa fa-bars fa-rotate-90"></i></li>
+                            <li><i ng-class="{ good : spot.quality_levels.noise == 1,
+                                               decent : spot.quality_levels.noise == 2,
+                                               bad : spot.quality_levels.noise == 3}"
+                                   ng-repeat="n in [] | range:spot.quality_levels.noise"
+                                   class="fa fa-bars fa-rotate-90"></i></li>
+                            <li><i ng-class="{ good : spot.quality_levels.parking == 3,
+                                               decent : spot.quality_levels.parking == 2,
+                                               bad : spot.quality_levels.parking == 1}"
+                                   ng-repeat="n in [] | range:spot.quality_levels.parking"
+                                   class="fa fa-bars fa-rotate-90"></i></li>
+                        </ul>
+                    </div>
+                </figure>
+            </section>
+            <i class="down-arrow fa fa-chevron-circle-down fa-2x"></i>
+        </div>
+        <div class="col xs-12 col-sm-7 col-md-8 col-lg-9 map-container">
+            <!--docs http://rawgit.com/allenhwkim/angularjs-google-maps/master/build/docs/index.html-->
+            <map center="41.8833, -87.6333" zoom="12"></map>
+        </div>
+    </div>
+</div>
+
+<script>
+    if ('ontouchstart' in document) {
+        $(".main-wrapper").removeClass("no-touch").addClass("touch");
+    }
+</script>

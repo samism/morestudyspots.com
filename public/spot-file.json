@@ -1,0 +1,159 @@
+[
+  {
+    "name": "Cassava Cafe",
+    "address": {
+      "street": "1211 N LaSalle Street",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60610",
+      "lat": "41.904316",
+      "long": "-87.632704"
+    },
+    "quality_levels": {
+      "wifi": "1",
+      "parking": "1",
+      "noise": "1",
+      "outlets": "3"
+    },
+    "phone": "(312) 487-2888",
+    "type": "coffee",
+    "hours": {
+      "mon": "7:30-12",
+      "tue": "7:30-12",
+      "wed": "7:30-12",
+      "thu": "7:30-12",
+      "fri": "7:30-1",
+      "sat": "8:30-1",
+      "sun": "8:30-12"
+    },
+    "urls": {
+      "desktop": "http://www.cassavacafe.com/",
+      "yelp": "http://www.yelp.com/biz/cassava-cafe-chicago",
+      "fb": "https://www.facebook.com/cassavacafe",
+      "insta": "https://instagram.com/cassavacafe/"
+    }
+  },
+  {
+    "name": "Kafein",
+    "address": {
+      "street": "1640 Chicago Avenue",
+      "city": "Evanston",
+      "state": "IL",
+      "zip": "60201",
+      "lat": "42.046858",
+      "long": "-87.679596"
+    },
+    "quality_levels": {
+      "wifi": "3",
+      "outlets": "3",
+      "noise": "2",
+      "parking": "1"
+    },
+    "phone": "(847) 491-1621",
+    "type": "coffee",
+    "hours": {
+      "mon": "11am-12am",
+      "tue": "11am-12am",
+      "wed": "11am-12am",
+      "thu": "11am-12am",
+      "fri": "11am-1am",
+      "sat": "11am-1am",
+      "sun": "11am-12am"
+    },
+    "urls": {
+      "yelp": "http://www.yelp.com/biz/kafein-evanston",
+      "twitter": "https://twitter.com/kafeinevanston",
+      "desktop": "http://kafein.com/",
+      "fb": "https://www.facebook.com/kafeincoffeeevanston"
+    }
+  },
+  {
+    "name": "Starbucks",
+    "address": {
+      "street": "210 W North Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60610",
+      "lat": "41.911322",
+      "long": "-87.635188"
+    },
+    "quality_levels": {
+      "wifi": "1",
+      "parking": "1",
+      "noise": "3",
+      "outlets": "2"
+    },
+    "phone": "(312) 867-0186",
+    "type": "coffee",
+    "urls": {
+      "yelp": "http://www.yelp.com/biz/starbucks-chicago-114",
+      "fb": "https://www.facebook.com/Starbucks-155612581115818/"
+    }
+  },
+  {
+    "name": "Starbucks",
+    "address": {
+      "street": "251 E Huron Street",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60611",
+      "lat": "41.894640",
+      "long": "-87.621128"
+    },
+    "quality_levels": {
+      "wifi": "1",
+      "parking": "1",
+      "noise": "1",
+      "outlets": "1"
+    },
+    "phone": "(312) 274-1472",
+    "type": "coffee",
+    "urls": {
+      "yelp": "http://www.yelp.com/biz/starbucks-chicago-116"
+    }
+  },
+  {
+    "name": "Dunkin Donuts",
+    "address": {
+      "street": "39 W Jackson Boulevard",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60604",
+      "lat": "41.878046",
+      "long": "-87.628975"
+    },
+    "quality_levels": {
+      "wifi": "1",
+      "parking": "1",
+      "noise": "1",
+      "outlets": "1"
+    },
+    "phone": "(312) 939-3133",
+    "type": "coffee",
+    "urls": {
+      "yelp": "http://www.yelp.com/biz/dunkin-donuts-chicago-185"
+    }
+  },
+  {
+    "name": "Dunkin Donuts",
+    "address": {
+      "street": "5615 S Harlem Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60638",
+      "lat": "41.789667",
+      "long": "-87.801084"
+    },
+    "quality_levels": {
+      "wifi": "1",
+      "parking": "1",
+      "noise": "1",
+      "outlets": "1"
+    },
+    "phone": "(773) 586-6460",
+    "type": "coffee",
+    "urls": {
+      "yelp": "http://www.yelp.com/biz/dunkin-donuts-chicago-91"
+    }
+  }
+]

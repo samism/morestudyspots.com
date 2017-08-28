@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="morestudyspots">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>#MoreStudySpots | Let's Study Better.</title>
+
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/animate.min.css">
+    <link rel="stylesheet" href="stylesheets/creative.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top clearfix">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#/">#MoreStudySpots</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#spots">Study Spots</a></li>
+                    <li><a class="page-scroll" href="#action">Take Action</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-wrapper no-touch" ng-controller="AppController" ng-view></div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center"><a href="http://samism.net">Sam Ismail</a> © 2015 - Made with <i class="fa fa-gratipay"></i> in Chicago</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+
+    <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/angular-route.min.js"></script>
+    <script src="javascripts/controllers/app.js"></script>
+
+    <script src="javascripts/jquery.easing.min.js"></script>
+    <script src="javascripts/jquery.fittext.js"></script>
+    <script src="javascripts/wow.min.js"></script>
+    <script src="javascripts/creative.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-agIP0Ud0cXW3eg8_uRQIi1ZHhPNTZQ&callback=initMap"></script>
+    <script src="javascripts/ng-map.min.js"></script>
+</body>
+</html>
